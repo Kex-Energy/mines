@@ -3,7 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 
-// -----|герерация поля|-----
+// -----|ГЈГҐГ°ГҐГ°Г Г¶ГЁГї ГЇГ®Г«Гї|------
 MineField::MineField() 
 {
 	mark_count = 0;
@@ -80,7 +80,7 @@ MineField::MineField()
 	}
 
 }
-//-----Вскрытие клетки-----
+//-----Г‚Г±ГЄГ°Г»ГІГЁГҐ ГЄГ«ГҐГІГЄГЁ-----
 void MineField::Open_Selected(int x, int y)
 {
 	Player_Field[x + (y * 8)] = Real_Field[x + (y * 8)];
@@ -99,7 +99,7 @@ void MineField::Open_Selected(int x, int y)
 	}
 	return;
 }
-//-----Пометить клетку-----
+//-----ГЏГ®Г¬ГҐГІГЁГІГј ГЄГ«ГҐГІГЄГі-----
 void MineField::Mark_Selected(int x, int y)
 {
 		if (Player_Field[x  + (y * 8)] == 9 && mark_count != 10)
@@ -114,7 +114,7 @@ void MineField::Mark_Selected(int x, int y)
 		}
 	return;
 }
-//-----Победа?-----
+//-----ГЏГ®ГЎГҐГ¤Г ?-----
 bool MineField::Check_Win()
 {
 	int count_true_marked = 0;
